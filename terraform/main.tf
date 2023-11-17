@@ -2,7 +2,7 @@ data "azurerm_client_config" "current" {}
 
 module "resource_group" {
   # source                                      = "../modules/resourcegroup"
-  source                                      = "github.com/techslateramu/terraform-modules//azure/containerinstance"
+  source                                      = "github.com/techslateramu/terraform-modules//azure/resourcegroup"
   environment                                 = var.environment
   location                                    = var.location
   main_project                                = var.main_project
