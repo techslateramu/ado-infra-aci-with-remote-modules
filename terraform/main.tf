@@ -1,7 +1,6 @@
 data "azurerm_client_config" "current" {}
 
 module "resource_group" {
-  # source                                      = "../modules/resourcegroup"
   source                                      = "github.com/techslateramu/terraform-modules//azure/resourcegroup"
   environment                                 = var.environment
   location                                    = var.location
@@ -11,7 +10,6 @@ module "resource_group" {
 }
 
 module "container_instance" {
-  # source                                      = "../modules/containerinstance"
   source                                      = "github.com/techslateramu/terraform-modules//azure/containerinstance"
   environment                                 = var.environment
   location                                    = var.location
