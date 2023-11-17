@@ -13,10 +13,10 @@ variable "ARM_CLIENT_SECRET"    {}
 
 variable "specific_tags"        { default = {} }
 
-variable "main_project"         { default = "" }   # Set this VARIABLE - this will form  the name of RESOURCES
+variable "main_project"         { default = "dash" }   # Set this VARIABLE - this will form  the name of RESOURCES
 
 variable "sub_project"          { default = "01" }
 variable "location"             { default = "uksouth" }                             # https://github.com/claranet/terraform-azurerm-regions/blob/master/regions.tf
-variable "container_image"      { default = "linuxramu/calc:2.5" }
+variable "container_image"      { default = "linuxramu/dash-poc:2.0" }
 
-variable "dns_name_label"       { default = "" }  # Set this VARIABLE - this will be URL of application, should be unique
+variable "dns_name_label"       { default = "dash123" }  # Set this VARIABLE - this will be URL of application, should be unique
